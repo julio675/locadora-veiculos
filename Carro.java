@@ -30,10 +30,6 @@ public class Carro extends Veiculo implements Automovel{
 		return tipoCombustivel;
 	}
 
-	public Scanner getLeitor() {
-		return leitor;
-	}
-
 	@Override
 	public double acelerar(double velocidade) {
 		return velocidade + 20;
