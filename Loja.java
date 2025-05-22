@@ -27,7 +27,7 @@ public class Loja {
                 cadastrarMoto();
                 break;
             case 3:
-                 System.out.println("ddd");
+                cadastrarBicicleta();
                 break;
             default:
                 System.out.println("Opção inválida.");
