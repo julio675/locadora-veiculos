@@ -4,7 +4,36 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Loja {
-	
+	/* private ArrayList<Veiculo> disponiveis = new ArrayList<>();
+    private ArrayList<Veiculo> alugados = new ArrayList<>();
+    private ArrayList<Veiculo> vendidos = new ArrayList<>();
+
+    private Scanner sc = new Scanner(System.in);
+
+    public void cadastrarVeiculo() {
+        System.out.println("\nQual tipo de veículo deseja cadastrar?");
+        System.out.println("1 - Carro");
+        System.out.println("2 - Moto");
+        System.out.println("3 - Bicicleta");
+        System.out.print("Escolha: ");
+        int escolha = sc.nextInt();
+        sc.nextLine(); // limpar buffer
+
+        switch (escolha) {
+            case 1:
+                cadastrarCarro();
+                break;
+            case 2:
+                cadastrarMoto();
+                break;
+            case 3:
+                cadastrarBicicleta();
+                break;
+            default:
+                System.out.println("Opção inválida.");
+        }
+    }*/
+
 	public double calcularServicoExtra(String tipoServico) {
 		if(tipoServico.equalsIgnoreCase("seguro")) {
 			return 5000;
@@ -21,6 +50,36 @@ public class Loja {
 		}
 	}
 	
+	 /*   public void cadastrarCarro() {
+	        System.out.println("\nCadastro de carro:");
+		String modelo; 
+		String marca;
+		int ano;
+		double preco;
+		int portas;
+		boolean conversivel;
+		String conversivel;
+		
+	        System.out.print("Modelo: ");
+	        modelo = sc.nextLine(); 
+	        System.out.print("Marca: ");
+	        marca = sc.nextLine();
+	        System.out.print("Ano: ");
+	        ano = sc.nextInt();
+	        System.out.print("Preço base: ");
+	        preco = sc.nextDouble();
+	        System.out.print("Quantidade de portas: ");
+	        portas = sc.nextInt();
+	        System.out.print("É conversível (true/false): ");
+	        conversivel = sc.nextBoolean();
+	        sc.nextLine(); // limpar buffer
+	        System.out.print("Tipo de combustível: ");
+	        combustivel = sc.nextLine();
+	
+	        Carro carro = new Carro(modelo, marca, ano, preco, portas, conversivel, combustivel);
+	        disponiveis.add(carro);
+	        System.out.println("Carro cadastrado com sucesso!\n");
+	    }*/
 	public void cadastrarMoto(ArrayList<Moto> motos) {
 		Scanner sc = new Scanner(System.in);
 		
