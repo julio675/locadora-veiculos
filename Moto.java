@@ -1,4 +1,4 @@
-package projeto;
+package locadora_veiculos;
 
 public class Moto extends Veiculo implements Automovel{
 	
@@ -7,24 +7,17 @@ public class Moto extends Veiculo implements Automovel{
 	
 	public Moto(String modelo, String marca, int ano, double precoBase, int cc, String tipo) {
 		super(modelo,marca,ano,precoBase);
-		this.setCc(cc);
-		this.setTipo(tipo);
+		this.cc = cc;
+		this.tipo = tipo;
+		setVeiculoTipo("moto");
 	}
 
 	public int getCc() {
 		return cc;
 	}
 
-	public void setCc(int cc) {
-		this.cc = cc;
-	}
-
 	public String getTipo() {
 		return tipo;
-	}
-
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
 	}
 
 	@Override
